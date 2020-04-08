@@ -1,0 +1,17 @@
+<div class="jumbotron text-center">
+    <h1>Nerds and Proud</h1>
+
+    <p>{{ tagline }}</p>
+</div>
+
+<div>
+    <form ng-submit="submit(nerdData)">
+        <div class="form-group">
+            <label for="nameInputEmail1">Name</label>
+            <input type="text" class="form-control" id="nameInputEmail1" aria-describedby="emailHelp" required ng-model="nerdData.name">
+            <small id="emailHelp" class="form-text text-muted">Enter a nerd you know!.</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+

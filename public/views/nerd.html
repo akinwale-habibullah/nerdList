@@ -1,0 +1,22 @@
+<div class="jumbotron text-center">
+    <h1>Nerds and Proud</h1>
+
+    <p>{{ tagline }}</p>
+</div>
+
+<ul class="list-group">
+
+    <div class="row">
+        <div class="col-sm-4" ng-repeat="nerd in nerds" style="margin-bottom: 15px">
+            <div class="card">
+                <img src="https://via.placeholder.com/150" class="card-img-top" alt="{{nerd.name}} profile picture">
+                <div class="card-body">
+                    <h5 class="card-title">{{ nerd.name }}</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                        content.</p>
+                    <a href="/nerds/{{_id}}" class="btn btn-primary">Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</ul>
