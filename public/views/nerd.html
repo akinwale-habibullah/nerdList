@@ -14,7 +14,9 @@
                     <h5 class="card-title">{{ nerd.name }}</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                         content.</p>
-                    <a href="/nerds/{{_id}}" class="btn btn-primary">Profile</a>
+                        <a href="/nerds/{{nerd._id}}/edit" class="btn btn-primary"><i class="fa fa-edit"></i></a>
+                        <a href="#" class="btn btn-primary" ng-click="delete(nerd._id)"><i class="fa fa-trash-alt"></i></a>
+                        <a href="/nerds/{{nerd._id}}" class="btn btn-primary">Profile</a>
                 </div>
             </div>
         </div>
